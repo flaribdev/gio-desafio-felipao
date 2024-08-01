@@ -78,12 +78,9 @@ def criar_usuario():
         input("Digite uma tecla para continuar")
 global lista_contas
 lista_contas = []
-numero_conta = 1
+
 def criar_conta(usuario, numero_conta):
     agencia = 0001
-    
-    
-
     conta = {
         "agencia": agencia,
         "conta": numero_conta,
@@ -111,7 +108,7 @@ limite = 500
 extrato = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
-
+numero_conta = 1
 
 
 while True:
