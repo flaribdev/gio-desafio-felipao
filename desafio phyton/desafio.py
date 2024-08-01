@@ -80,7 +80,7 @@ global lista_contas
 lista_contas = []
 
 def criar_conta(usuario, numero_conta):
-    agencia = 0001
+    agencia = "0001"
     conta = {
         "agencia": agencia,
         "conta": numero_conta,
@@ -88,6 +88,8 @@ def criar_conta(usuario, numero_conta):
     }
     lista_contas.append(conta)
     numero_conta += 1
+
+    print(f"conta criada: agencia: {agencia}, conta: {numero_conta}, usuario: " + usuario["nome"])
 
     return numero_conta
 
@@ -101,14 +103,14 @@ menu = """
 [6] Listar usuarios
 [7] Criar conta
 
-=> """
+=>"""
 
 saldo = 0
 limite = 500
 extrato = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
-numero_conta = 1
+numero_conta = 0
 
 
 while True:
